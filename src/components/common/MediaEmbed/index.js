@@ -23,6 +23,7 @@ import InDesign from "./embeds/InDesign";
 import { Giphy } from "./embeds/Giphy";
 import { MediaGiphy } from "./embeds/MediaGiphy";
 import { Code } from "./embeds/Code";
+import { Video } from "./embeds/Video";
 
 const SERVICES = {
   INDESIGN: "indesign",
@@ -43,6 +44,7 @@ const SERVICES = {
   GIPHY: "giphy",
   MEDIAGIPHY: "mediagiphy",
   CODE: "code",
+  CODE: "video",
   NOT_SUPPORTED: "Not Supported",
 };
 
@@ -208,6 +210,9 @@ const MediaEmbed = ({ mediaUrl, width, height, autoplay = false }) => {
     // CODE IFRAME
     if (mediaUrl.includes("://editor.p5js.org/")) return SERVICES.CODE;
 
+    // Video
+    if (mediaUrl.includes("MOV")) return SERVICES.VIDEO;
+
     // GIPHY url
     if (mediaUrl.includes("://giphy.com/") || mediaUrl.includes("://gph.is"))
       return SERVICES.GIPHY;
@@ -243,6 +248,7 @@ const MediaEmbed = ({ mediaUrl, width, height, autoplay = false }) => {
       )}
       {service === SERVICES.MEDIAGIPHY && <MediaGiphy url={mediaUrl} />}
       {service === SERVICES.CODE && <Code url={mediaUrl} />}
+      {service === SERVICES.VIDEO && <Video url={mediaUrl} />}
       {service === SERVICES.NOT_SUPPORTED && (
         <div>
           <p>

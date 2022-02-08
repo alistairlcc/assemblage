@@ -29,13 +29,13 @@ const Header = ({ className, location }) => {
             </Link>
           </li>
           <li>
-            <Link to="/artwork" activeClassName="active">
-              artwork
+            <Link to="/sessions" activeClassName="active">
+              sessions
             </Link>
           </li>
           <li>
-            <Link to="/sessions" activeClassName="active">
-              sessions
+            <Link to="/artwork" activeClassName="active">
+              artwork
             </Link>
           </li>
         </ul>

@@ -21,7 +21,7 @@ const HomePage = () => {
           </h2>
         </div>
       </div>
-      <BackgroundVideo />
+      {/* <BackgroundVideo /> */}
     </>
   );
 };

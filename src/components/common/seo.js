@@ -79,13 +79,7 @@ function Seo({ description, image, lang, meta, title }) {
           content: metaimage,
         },
       ].concat(meta)}
-    >
-      <script
-        defer
-        data-domain="alistairmcclymont.com"
-        src="https://plausible.io/js/plausible.js"
-      ></script>
-    </Helmet>
+    ></Helmet>
   );
 }
 

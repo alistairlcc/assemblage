@@ -37,9 +37,6 @@ const Map = ({ zoom = 13, places, className }) => {
       container: mapContainerRef.current,
       accessToken: MAPBOX_TOKEN,
       style: "mapbox://styles/mapbox/dark-v10",
-      // style: "mapbox://styles/alistairmcclymont/ckx27fspr2hr914mnu428bbe7",
-      // style: "mapbox://styles/alistairmcclymont/ckx3r23ew0lu214n7mh17roa9",
-      // center: [longitude, latitude],
       zoom: 10,
     });
     map.addControl(new mapboxgl.NavigationControl(), "top-right");

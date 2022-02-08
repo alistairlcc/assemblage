@@ -10,7 +10,7 @@ const Footer = ({ className, location }) => {
 
   return (
     <footer className={styles.footer}>
-      <div>All works © Alistair McClymont.</div>
+      <div>All works © GMD and GMD students.</div>
     </footer>
   );
 };

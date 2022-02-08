@@ -4,7 +4,7 @@
   </a>
 </p>
 <h1 align="center">
-  alistairmcclymont.com from Gatsby minimal starter
+  assemblage.gmdlcc.com from Gatsby minimal starter
 </h1>
 
 ## 🚀 Quick start

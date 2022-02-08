@@ -1,0 +1,48 @@
+.mailchimp-wrapper {
+  margin-top: calc(var(--page-padding) * 3);
+  width: 100%;
+  @include tablet {
+    width: 50%;
+  }
+  @include desktop {
+    width: 40%;
+  }
+  h2 {
+    // font-size: var(--font-size-normal);
+    // font-weight: normal;
+  }
+  input,
+  button {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    // border-color: var(--color-text);
+    border: 1px solid var(--color-text);
+    // margin-left: var(--spacing-unit-1);
+    margin: var(--spacing-unit-2) 0;
+    padding: var(--spacing-unit-1) var(--spacing-unit-2);
+  }
+
+  button {
+    margin-left: var(--spacing-unit-2);
+    color: var(--color-bg);
+    background-color: var(--color-text);
+    cursor: pointer;
+  }
+}
+.mailchimp-form {
+  color: var(--color-secondary);
+  .error-message {
+    color: tomato;
+  }
+  .success {
+    color: gold;
+  }
+  .error-message,
+  .success {
+    margin-bottom: var(--page-padding);
+  }
+}
+
+.optional {
+  padding-left: var(--spacing-unit-1);
+}

@@ -1,0 +1,49 @@
+.home {
+  // color: #fff;
+  // a {
+  //   color: #fff;
+  // }
+
+  // p {
+  //   width: 100%;
+  //   @include tablet {
+  //     width: 30%;
+  //   }
+  //   @include desktop {
+  //     // width: 50%;
+  //   }
+  // }
+
+  .home-info {
+    opacity: 0.82;
+
+    margin-top: 42vh;
+    @include tablet {
+      margin-top: 45vh;
+    }
+    @include desktop {
+      margin-top: 50vh;
+    }
+
+    h2,
+    h3 {
+      font-weight: normal;
+      font-size: var(--font-size-small-x);
+      @include tablet {
+        font-size: var(--font-size-normal);
+      }
+    }
+  }
+
+  h2 {
+    margin: 0;
+    margin-bottom: 4px;
+    width: 80%;
+    @include tablet {
+      width: 50%;
+    }
+    @include desktop {
+      width: 40%;
+    }
+  }
+}

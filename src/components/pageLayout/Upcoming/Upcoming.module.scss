@@ -1,0 +1,25 @@
+.upcomming {
+  margin-top: calc(var(--page-padding) * 2);
+
+  article {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .date {
+    width: 70px;
+    @include tablet {
+      width: 100px;
+    }
+  }
+  .title {
+    width: calc(100% - 70px);
+    @include tablet {
+      width: calc(100% - 100px);
+    }
+  }
+  h3 {
+    margin: 0;
+    margin-bottom: 4px;
+    // margin-left: var(--page-padding);
+  }
+}

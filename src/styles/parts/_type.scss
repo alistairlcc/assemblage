@@ -1,0 +1,33 @@
+// Headings
+.header1 {
+  font-size: var(--font-size-xxx-large);
+  font-weight: var(--font-weight-extrabold);
+}
+
+.header2 {
+  font-size: var(--font-size-xx-large);
+  font-weight: var(--font-weight-extrabold);
+}
+
+.header3 {
+  font-size: var(--font-size-x-large);
+  font-weight: var(--font-weight-extrabold);
+}
+
+.header4 {
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-bold);
+}
+
+.header5 {
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-bold);
+}
+
+.header1,
+.header2,
+.header3,
+.header4,
+.header5 {
+  line-height: 1.2;
+}

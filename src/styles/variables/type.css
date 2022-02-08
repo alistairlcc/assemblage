@@ -1,0 +1,70 @@
+:root {
+  --font-size-x-small: 12px;
+  --font-size-small: 14px;
+  --font-size-small-x: 16px;
+  --font-size-normal: 19px;
+  --font-size-x-normal: 18px;
+  --font-size-medium: 20px;
+  --font-size-x-medium: 24px;
+  --font-size-large: 28px;
+  --font-size-x-large: 36px;
+  --font-size-xx-large: 48px;
+  --font-size-xxx-large: 72px;
+  --font-size-xxxx-large: 84px;
+
+  /* --font-family-body: "Manrope", sans-serif; */
+  --font-family-body: "IBM Plex Sans", sans-serif;
+  /* --font-family-body: "Noto Sans", sans-serif; */
+  /* --font-family-mono: "IBM Plex Mono", sans-serif; */
+
+  --font-weight-normal: normal;
+  --font-weight-bold: bold;
+  --font-weight-thin: 100;
+  --font-weight-extralight: 200;
+  --font-weight-light: 300;
+  --font-weight-medium: 400;
+  --font-weight-semibold: 600;
+  --font-weight-extrabold: 800;
+}
+
+/* @media screen and (min-width: 48em) {
+  :root {
+    --font-size-x-small: 14px;
+    --font-size-small: 16px;
+    --font-size-normal: 16px;
+    --font-size-x-normal: 16px;
+    --font-size-medium: 18px;
+    --font-size-large: 24px;
+    --font-size-x-large: 42px;
+    --font-size-xx-large: 64px;
+    --font-size-xxx-large: 72px;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  :root {
+    --font-size-x-small: 14px;
+    --font-size-small: 16px;
+    --font-size-normal: 16px;
+    --font-size-x-normal: 18px;
+    --font-size-medium: 20px;
+    --font-size-large: 28px;
+    --font-size-x-large: 48px;
+    --font-size-xx-large: 72px;
+    --font-size-xxx-large: 84px;
+  }
+}
+
+@media screen and (min-width: 75em) {
+  :root {
+    --font-size-x-small: 14px;
+    --font-size-small: 16px;
+    --font-size-normal: 16px;
+    --font-size-x-normal: 18px;
+    --font-size-medium: 20px;
+    --font-size-large: 36px;
+    --font-size-x-large: 60px;
+    --font-size-xx-large: 84px;
+    --font-size-xxx-large: 96px;
+  }
+} */

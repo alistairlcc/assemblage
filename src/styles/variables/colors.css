@@ -1,0 +1,28 @@
+:root {
+  --color-text: #000;
+  --color-secondary: rgb(111, 111, 111);
+  --color-secondary-dark: rgb(125, 125, 125);
+  --color-bg: #fff;
+  --opacity-bg: rgba(255, 255, 255, 0.5);
+  --image-opacity: 1;
+}
+
+html.light-mode {
+  --color-text: #000;
+  --color-secondary: rgb(135, 135, 135);
+  --color-bg: #fff;
+  --opacity-bg: rgba(255, 255, 255, 0.5);
+}
+
+html.dark-mode {
+  --color-text: #fff;
+  --color-secondary: rgb(168, 168, 168);
+  --color-bg: #000;
+  --opacity-bg: rgba(0, 0, 0, 0.5);
+}
+html.image-on {
+  --image-opacity: 1;
+}
+html.image-off {
+  --image-opacity: 0;
+}

@@ -1,0 +1,36 @@
+.details {
+  @include desktop {
+    width: 40%;
+  }
+  margin-bottom: calc(var(--page-padding) * 4);
+}
+.description {
+  p {
+    margin-top: 0;
+  }
+  @include desktop {
+    max-width: 50%;
+  }
+}
+.date {
+  // font-size: var(--font-size-medium-x);
+  margin-top: 0;
+  margin-bottom: calc(var(--page-padding) * 4);
+  @include desktop {
+    margin-bottom: calc(var(--page-padding) * 2);
+  }
+}
+.material,
+.dimensions {
+  color: var(--color-secondary);
+}
+
+.info {
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+  }
+  margin: calc(var(--page-padding) * 3) 0;
+}

@@ -1,0 +1,28 @@
+$large-mobile-size: 35em;
+$tablet-size: 48em;
+$desktop-size: 60em;
+$widescreen-size: 75em;
+
+@mixin large-mobile {
+  @media screen and (min-width: $large-mobile-size) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: $tablet-size) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $desktop-size) {
+    @content;
+  }
+}
+
+@mixin widescreen {
+  @media screen and (min-width: $widescreen-size) {
+    @content;
+  }
+}

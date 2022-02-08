@@ -1,0 +1,19 @@
+:root {
+  --default-header-height: 85px;
+  --header-height: var(--default-header-height);
+  --default-footer-height: var(--spacing-unit-10);
+  --footer-height: var(--default-footer-height);
+  --page-max-width: 1280px;
+  --hub-border-width: 1px;
+  --page-padding: var(--spacing-unit-2);
+
+  --spacing-x-small: var(--spacing-unit-1);
+  --spacing-small: var(--spacing-unit-3);
+  --spacing-normal: var(--spacing-unit-4);
+  --spacing-normal-x: var(--spacing-unit-5);
+  --spacing-x-normal: var(--spacing-unit-8);
+  --spacing-xx-normal: var(--spacing-unit-12);
+  --spacing-large: var(--spacing-unit-16);
+  --spacing-x-large: var(--spacing-unit-32);
+  --spacing-xx-large: var(--spacing-unit-48);
+}

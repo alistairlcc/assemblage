@@ -1,0 +1,30 @@
+.popup {
+  //   background-color: green;
+}
+
+:global(.mapboxgl-popup-content) {
+  background-color: black;
+  //   line-height: 2.5em;
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-normal);
+  color: var(--color-text);
+  h2 {
+    font-size: var(--font-size-normal);
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-normal);
+    color: var(--color-text);
+  }
+
+  button {
+    color: var(--color-text);
+  }
+}
+
+:global(.mapboxgl-ctrl-bottom-left),
+:global(.mapboxgl-ctrl-bottom-right) {
+  display: none;
+}
+
+.marker {
+  //   background-color: limegreen;
+}

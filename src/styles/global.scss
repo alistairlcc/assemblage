@@ -1,0 +1,83 @@
+@import "~normalize.css";
+
+@import "utilities";
+
+// These files will get stamped once into this css file
+@import "parts/fonts";
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --page-padding: var(--spacing-unit-3);
+  @include tablet {
+    --page-padding: var(--spacing-unit-4);
+  }
+  @include desktop {
+    --page-padding: var(--spacing-unit-5);
+  }
+}
+
+html,
+body {
+  height: 100%;
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-normal);
+  color: var(--color-text);
+
+  -webkit-font-smoothing: antialiased;
+}
+#___gatsby,
+#gatsby-focus-wrapper {
+  height: 100%;
+}
+html p {
+  line-height: 1.5;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  background: var(--color-bg);
+}
+
+a {
+  // color: var(--color-text);
+  transition: color ease-in-out 0.2s;
+  color: var(--color-secondary);
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+    color: var(--color-primary);
+  }
+}
+
+h1 {
+  font-weight: var(--font-weight-light);
+}
+h2,
+h3 {
+  font-weight: var(--font-weight-light);
+  @include tablet {
+    font-weight: var(--font-weight-light);
+  }
+}
+h2 {
+  font-size: var(--font-size-large);
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+@import "parts/type";
+@import "parts/layout";

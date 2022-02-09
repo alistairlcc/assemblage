@@ -1,11 +1,7 @@
 .bio-item {
   transition: none;
   padding: 2px 0;
-  &:hover {
-    background-color: var(--color-text);
-    color: var(--color-bg);
-    text-decoration: none;
-  }
+
   display: block;
 
   article {

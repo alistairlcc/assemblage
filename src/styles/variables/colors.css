@@ -9,7 +9,7 @@
 
 html.light-mode {
   --color-text: #000;
-  --color-secondary: rgb(135, 135, 135);
+  --color-secondary: rgb(36, 57, 102);
   --color-bg: #fff;
   --opacity-bg: rgba(255, 255, 255, 0.5);
 }

@@ -25,7 +25,7 @@ const Header = ({ className, location }) => {
         <ul>
           <li className={styles.name}>
             <Link to="/" activeClassName="active">
-              Assemblage
+              Assemblage:
             </Link>
           </li>
           <li>

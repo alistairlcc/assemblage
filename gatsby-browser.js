@@ -11,7 +11,7 @@ import "./src/styles/variables/sizes.css";
 import "./src/styles/variables/type.css";
 import "./src/styles/global.scss";
 
-import "typeface-ibm-plex-sans";
+import "typeface-work-sans";
 
 import Layout from "./src/components/layout/Layout";
 import { Provider } from "./src/context/Context";

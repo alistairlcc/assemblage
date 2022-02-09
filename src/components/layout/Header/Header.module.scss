@@ -4,6 +4,12 @@
     padding: 0;
     display: flex;
     flex-wrap: wrap;
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-large);
+
+    @include desktop {
+      font-size: var(--font-size-x-large);
+    }
   }
 
   li {
@@ -14,11 +20,6 @@
   }
 
   a {
-    font-size: var(--font-size-medium);
-
-    @include desktop {
-      font-size: var(--font-size-large);
-    }
     color: var(--color-secondary);
     text-decoration: none;
     &:hover {
@@ -35,15 +36,6 @@
     width: 100%;
     @include tablet {
       width: unset;
-    }
-    a {
-      font-size: var(--font-size-large);
-      @include tablet {
-        font-size: var(--font-size-medium);
-      }
-      @include desktop {
-        font-size: var(--font-size-large);
-      }
     }
   }
 }

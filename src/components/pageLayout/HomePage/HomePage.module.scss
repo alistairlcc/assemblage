@@ -17,21 +17,29 @@
   .home-info {
     opacity: 0.82;
 
-    margin-top: 22vh;
+    margin-top: 8vh;
     @include tablet {
-      margin-top: 25vh;
+      margin-top: 10vh;
     }
     @include desktop {
-      margin-top: 30vh;
+      margin-top: 22vh;
     }
 
     h2,
     h3,
     p {
-      font-weight: normal;
+      // font-weight: normal;
       font-size: var(--font-size-normal);
       @include tablet {
         font-size: var(--font-size-medium);
+      }
+    }
+    p {
+      font-size: var(--font-size-large);
+      font-weight: var(--font-weight-extralight);
+      font-style: italic;
+      @include desktop {
+        font-size: var(--font-size-x-large);
       }
     }
   }
@@ -47,8 +55,5 @@
     @include desktop {
       width: 66%;
     }
-  }
-  p {
-    font-style: italic;
   }
 }

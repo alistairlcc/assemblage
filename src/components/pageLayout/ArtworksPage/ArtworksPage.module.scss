@@ -4,3 +4,11 @@
   justify-content: space-between;
   width: 100%;
 }
+.introduction {
+  width: 100%;
+  // flex-direction: row-reverse;
+  @include desktop {
+    max-width: 50%;
+  }
+  margin-bottom: 3em;
+}

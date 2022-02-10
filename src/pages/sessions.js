@@ -16,7 +16,11 @@ export const sessionPages = graphql`
           mainImage {
             asset {
               id
-              gatsbyImageData(layout: FULL_WIDTH, aspectRatio: 1)
+              gatsbyImageData(
+                layout: FULL_WIDTH
+                aspectRatio: 1.8
+                placeholder: BLURRED
+              )
             }
           }
           title

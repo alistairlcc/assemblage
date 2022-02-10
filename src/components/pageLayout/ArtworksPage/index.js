@@ -12,6 +12,12 @@ const ArtworksPage = ({ artworks }) => {
       <div className={styles.projectHeader}>
         <h1 className="visually-hidden">Artworks</h1>
       </div>
+      <section className={styles.introduction}>
+        <p>
+          Artworks are created as part of each session by BA Graphic and Media
+          Design students.
+        </p>
+      </section>
       {artworks && (
         <Grid items={artworks.map(({ node }) => node)} type="artwork" />
       )}

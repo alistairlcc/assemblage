@@ -27,6 +27,7 @@ const Padlet = ({ url }) => {
             width={codeWidth}
             height={codeHeight}
             src={url}
+            allow="fullscreen"
           ></iframe>
         </div>
       </div>

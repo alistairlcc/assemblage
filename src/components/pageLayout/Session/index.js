@@ -104,12 +104,22 @@ const Session = ({ session }) => {
         </section>
       </div>
 
-      {session.artworks && (
-        <section>
-          <ImageMediaGrid items={session.artworks} defaultAlt={session.title} />
+      {session.relatedArtworks.length > 0 && (
+        <section className={styles.relatedArtworks}>
+          <h3>Artworks</h3>
+          <Grid
+            items={session.relatedArtworks.map((item) => item.artwork)}
+            type="artwork"
+          />
         </section>
       )}
 
+      {session.artworks && (
+        <section>
+          <h3>Inspriation</h3>
+          <ImageMediaGrid items={session.artworks} defaultAlt={session.title} />
+        </section>
+      )}
       {session.location && (
         <Map
           places={[
@@ -121,16 +131,6 @@ const Session = ({ session }) => {
           ]}
           className={styles.map}
         />
-      )}
-
-      {session.relatedArtworks.length > 0 && (
-        <section className={styles.relatedArtworks}>
-          <h3>Related Artworks</h3>
-          <Grid
-            items={session.relatedArtworks.map((item) => item.artwork)}
-            type="artwork"
-          />
-        </section>
       )}
     </article>
   );

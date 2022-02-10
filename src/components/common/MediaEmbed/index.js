@@ -221,7 +221,8 @@ const MediaEmbed = ({ mediaUrl, width, height, autoplay = false }) => {
       return SERVICES.PADLET;
 
     // Video
-    if (mediaUrl.includes("MOV")) return SERVICES.VIDEO;
+    if (mediaUrl.includes(".MOV") || mediaUrl.includes(".mp4"))
+      return SERVICES.VIDEO;
 
     // GIPHY url
     if (mediaUrl.includes("://giphy.com/") || mediaUrl.includes("://gph.is"))

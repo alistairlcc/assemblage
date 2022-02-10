@@ -4,7 +4,6 @@ import clientConfig from "../../../client-config";
 import serializers from "./serializers";
 import * as styles from "./Blockcontent.module.scss";
 
-console.log("style", styles.content);
 const BlockContent = ({ blocks }) => (
   <BaseBlockContent
     className={styles.content}

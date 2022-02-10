@@ -5,6 +5,8 @@ import { Hero } from "../../common/Hero";
 import { BlockContent } from "../../common/BlockContent";
 import { ImageMediaGrid } from "../../common/ImageMediaGrid";
 
+import { MediaEmbed } from "../../common/MediaEmbed";
+
 import * as styles from "./Artwork.module.scss";
 
 const Artwork = ({ artwork }) => {
@@ -64,6 +66,9 @@ const Artwork = ({ artwork }) => {
       <section>
         <ImageMediaGrid items={artwork.artworks} defaultAlt={artwork.title} />
       </section>
+      <div>
+        <MediaEmbed mediaUrl="https://mediagci.padlet.com/1/widget?url=https%3A%2F%2Fapi.cloudflare.com%2Fclient%2Fv4%2Faccounts%2Fcc33bc6b9fa2dcffb7db4d7877260139%2Fstream%2Fa02dd12ff56fddbb9f2ca26ba7776d7f&autoplay=1&w=353&h=627" />
+      </div>
     </article>
   );
 };

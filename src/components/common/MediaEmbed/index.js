@@ -23,6 +23,7 @@ import InDesign from "./embeds/InDesign";
 import { Giphy } from "./embeds/Giphy";
 import { MediaGiphy } from "./embeds/MediaGiphy";
 import { Code } from "./embeds/Code";
+import { Padlet } from "./embeds/Padlet";
 import { Video } from "./embeds/Video";
 
 const SERVICES = {
@@ -44,11 +45,13 @@ const SERVICES = {
   GIPHY: "giphy",
   MEDIAGIPHY: "mediagiphy",
   CODE: "code",
-  CODE: "video",
+  PADLET: "padlet",
+  VIDEO: "video",
   NOT_SUPPORTED: "Not Supported",
 };
 
 const MediaEmbed = ({ mediaUrl, width, height, autoplay = false }) => {
+  console.log(mediaUrl);
   const mediaWidth = width ? width : null;
   const mediaHeight = height ? height : null;
   /* InDesign */
@@ -210,6 +213,13 @@ const MediaEmbed = ({ mediaUrl, width, height, autoplay = false }) => {
     // CODE IFRAME
     if (mediaUrl.includes("://editor.p5js.org/")) return SERVICES.CODE;
 
+    // padlet
+    if (
+      mediaUrl.includes("://mediagci.padlet.com/") ||
+      mediaUrl.includes("://embed.videodelivery.net")
+    )
+      return SERVICES.PADLET;
+
     // Video
     if (mediaUrl.includes("MOV")) return SERVICES.VIDEO;
 
@@ -248,6 +258,7 @@ const MediaEmbed = ({ mediaUrl, width, height, autoplay = false }) => {
       )}
       {service === SERVICES.MEDIAGIPHY && <MediaGiphy url={mediaUrl} />}
       {service === SERVICES.CODE && <Code url={mediaUrl} />}
+      {service === SERVICES.PADLET && <Padlet url={mediaUrl} />}
       {service === SERVICES.VIDEO && <Video url={mediaUrl} />}
       {service === SERVICES.NOT_SUPPORTED && (
         <div>

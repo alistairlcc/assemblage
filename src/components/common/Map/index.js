@@ -50,7 +50,6 @@ const Map = ({ zoom = 13, places, className }) => {
     if (!map) return;
 
     if (places.length !== 0) {
-      // console.log("places", places);
       const coords = [];
       places.forEach((place) => {
         coords.push([place.longitude, place.latitude]);

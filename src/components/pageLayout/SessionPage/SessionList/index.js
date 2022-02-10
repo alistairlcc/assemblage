@@ -6,7 +6,6 @@ import * as styles from "./SessionList.module.scss";
 
 const SessionList = ({ list, setPlaces, setAll }) =>
   list.map(({ node }, index) => {
-    console.log(node);
     const date = node.startDate ? new Date(node.startDate).getFullYear() : null;
     const image = node.mainImage?.asset?.gatsbyImageData;
     return (

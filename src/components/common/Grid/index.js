@@ -13,7 +13,7 @@ const Grid = ({ items, type }) => {
       <section className={styles.grid}>
         {items &&
           items.map((item, index) => {
-            if (item?.artwork) {
+            if (item?.slug) {
               return (
                 <article className={styles.gridItem} key={index}>
                   <Link key={index} to={`/${type}/${item.slug.current}`}>

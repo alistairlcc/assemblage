@@ -37,7 +37,7 @@ const Session = ({ data }) => {
   const { sessionPages } = data;
   return (
     <>
-      <Seo title="Session" />
+      <Seo title="Sessions" />
       <SessionPage sessionPages={sessionPages.edges} />
     </>
   );

@@ -24,6 +24,8 @@ import * as styles from "./Session.module.scss";
 // });
 
 const Session = ({ session }) => {
+  console.log("session", session);
+
   const startDate = session.startDate ? new Date(session.startDate) : null;
   const startDateString = startDate
     ? startDate.toLocaleString("default", {

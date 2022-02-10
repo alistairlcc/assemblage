@@ -99,7 +99,7 @@ const SessionTemplate = ({ data }) => {
   return (
     <>
       <Seo
-        title={session.title}
+        title={`Assemblage: ${session.title}`}
         image={seoImage}
         description={seoDescription}
       />

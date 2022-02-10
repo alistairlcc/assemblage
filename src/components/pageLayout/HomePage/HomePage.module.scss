@@ -35,7 +35,7 @@
       }
     }
     p {
-      font-size: var(--font-size-large);
+      font-size: var(--font-size-medium);
       font-weight: var(--font-weight-extralight);
       font-style: italic;
       @include desktop {
@@ -48,7 +48,7 @@
   p {
     margin: 0;
     margin: 2em 0;
-    width: 80%;
+    width: 100%;
     @include tablet {
       width: 66%;
     }

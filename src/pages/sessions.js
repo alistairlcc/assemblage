@@ -6,7 +6,7 @@ import { SessionPage } from "../components/pageLayout/SessionPage";
 export const sessionPages = graphql`
   query SessionPagesQuery {
     sessionPages: allSanitySession(
-      sort: { fields: [startDate], order: DESC }
+      sort: { fields: [startDate], order: ASC }
       filter: { slug: { current: { ne: null } }, startDate: { ne: null } }
     ) {
       edges {

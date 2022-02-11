@@ -31,6 +31,15 @@ export const sessionPages = graphql`
             lat
             lng
           }
+          relatedArtworks {
+            artwork {
+              mainImage {
+                asset {
+                  gatsbyImageData
+                }
+              }
+            }
+          }
         }
       }
     }

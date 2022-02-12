@@ -1,18 +1,5 @@
 .home {
-  // color: #fff;
-  // a {
-  //   color: #fff;
-  // }
-
-  // p {
-  //   width: 100%;
-  //   @include tablet {
-  //     width: 30%;
-  //   }
-  //   @include desktop {
-  //     // width: 50%;
-  //   }
-  // }
+  min-height: 80vh;
 
   .home-info {
     opacity: 0.82;
@@ -29,7 +16,7 @@
     h3,
     p {
       // font-weight: normal;
-      font-size: var(--font-size-normal);
+      font-size: var(--font-size-medium);
       @include tablet {
         font-size: var(--font-size-medium);
       }
@@ -50,9 +37,9 @@
     margin: 2em 0;
     width: 100%;
     @include tablet {
-      width: 66%;
+      width: 100%;
     }
-    @include desktop {
+    @include widescreen {
       width: 66%;
     }
   }

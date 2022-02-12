@@ -44,9 +44,9 @@ const Session = ({ session }) => {
 
   return (
     <article>
-      {session.mainImage && (
+      {/* {session.mainImage && (
         <Hero image={session.mainImage.asset.gatsbyImageData} alt="" />
-      )}
+      )} */}
       <h1>{session.title}</h1>
       <div className={styles.info}>
         {session._rawDescription && (

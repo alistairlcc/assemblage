@@ -73,7 +73,7 @@ async function createBiographyPages(graphql, actions, reporter) {
   biographyEdges.forEach((edge) => {
     const id = edge.node.id;
     const slug = edge.node.slug.current;
-    const path = `/sessions/${slug}/`;
+    const path = `${slug}/`;
 
     reporter.info(`Creating session page: ${path}`);
 

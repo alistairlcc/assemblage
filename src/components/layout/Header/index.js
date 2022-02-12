@@ -29,15 +29,25 @@ const Header = ({ className, location }) => {
             </Link>
           </li>
           <li>
-            <Link to="/sessions" activeClassName="active">
-              sessions
+            <Link to="/balance" activeClassName="active">
+              balance
             </Link>
           </li>
           <li>
+            <Link to="/movement" activeClassName="active">
+              movement
+            </Link>
+          </li>
+          <li>
+            <Link to="/phenomena" activeClassName="active">
+              phenomena
+            </Link>
+          </li>
+          {/* <li>
             <Link to="/artwork" activeClassName="active">
               artwork
             </Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </header>

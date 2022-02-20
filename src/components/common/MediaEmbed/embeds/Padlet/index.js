@@ -3,6 +3,7 @@ import React from "react";
 import * as styles from "./Padlet.module.scss";
 
 const Padlet = ({ url }) => {
+  console.log(url);
   const urlParams = new URLSearchParams(url);
   const width = urlParams.get("w");
   const height = urlParams.get("h");

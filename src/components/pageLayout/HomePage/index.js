@@ -1,15 +1,19 @@
 import React from "react";
 import { Link } from "gatsby";
-import loadable from "@loadable/component";
+// import loadable from "@loadable/component";
+
+import { Grid } from "../../common/Grid";
 
 // import { BackgroundVideo } from "./BackgroundVideo";
 
 import * as styles from "./HomePage.module.scss";
 
-const HomePage = () => {
-  const BackgroundVideo = loadable(() => import("./BackgroundVideo"), {
-    fallback: <div className="visually-hidden">loading background</div>,
-  });
+const HomePage = ({ artworks }) => {
+  // const BackgroundVideo = loadable(() => import("./BackgroundVideo"), {
+  //   fallback: <div className="visually-hidden">loading background</div>,
+  // });
+
+  console.log(artworks);
   return (
     <>
       <div className={styles.home}>
@@ -30,7 +34,9 @@ const HomePage = () => {
           </h2>
         </div>
       </div>
+
       {/* <BackgroundVideo /> */}
+      {artworks && <Grid items={artworks} type="artwork" />}
     </>
   );
 };

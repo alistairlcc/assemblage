@@ -53,12 +53,22 @@ const Artwork = ({ artwork }) => {
             {dims && (
               <>
                 {" "}
-                ({width && <>w</>} x {depth && <>d</>} x {height && <>h</>})
+                ({width && <>w</>}
+                {depth && <> x d</>}
+                {height && <> x h</>})
               </>
             )}
           </div>
         </section>
         <section className={styles.description}>
+          {artwork.artists && (
+            <h2>
+              {artwork.artists.map((artist, index) => {
+                const separator = index > 0 ? ", " : "";
+                return separator + artist.name;
+              })}
+            </h2>
+          )}
           <BlockContent blocks={artwork._rawDescription || []} />
         </section>
       </div>

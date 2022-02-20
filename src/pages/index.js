@@ -2,31 +2,37 @@ import React from "react";
 import { graphql } from "gatsby";
 import Seo from "../components/common/seo";
 import { HomePage } from "../components/pageLayout/HomePage";
-import { ArtworksPage } from "../components/pageLayout/ArtworksPage";
 
 export const artworks = graphql`
   query HomeArtworkQuery {
-    artworks: allSanityArtwork(
-      sort: { fields: [publishedAt], order: DESC }
-      filter: { slug: { current: { ne: null } }, publishedAt: { ne: null } }
+    artwork: allSanitySession(
+      filter: { slug: { current: { eq: "assemblage" } } }
     ) {
       edges {
         node {
-          id
-          mainImage {
-            asset {
-              id
-              gatsbyImageData(
-                layout: FULL_WIDTH
-                aspectRatio: 1.5
-                placeholder: BLURRED
-              )
-            }
-          }
           title
-          shortTitle
           slug {
             current
+          }
+          relatedArtworks {
+            artwork {
+              id
+              mainImage {
+                asset {
+                  id
+                  gatsbyImageData(
+                    layout: FULL_WIDTH
+                    aspectRatio: 1.5
+                    placeholder: BLURRED
+                  )
+                }
+              }
+              title
+              shortTitle
+              slug {
+                current
+              }
+            }
           }
         }
       }
@@ -35,12 +41,15 @@ export const artworks = graphql`
 `;
 
 const IndexPage = ({ data }) => {
-  const { artworks } = data;
+  const { artwork } = data;
+  const artworks = artwork.edges[0].node.relatedArtworks.map(
+    (item) => item.artwork
+  );
+  console.log(artworks);
   return (
     <>
       <Seo title="Assemblage" />
-      <HomePage />
-      <ArtworksPage artworks={artworks.edges} />
+      <HomePage artworks={artworks} />
     </>
   );
 };

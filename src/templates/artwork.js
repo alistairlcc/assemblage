@@ -23,6 +23,10 @@ export const query = graphql`
           url
         }
       }
+      artists {
+        name
+        year
+      }
       material
       dimensions {
         depth

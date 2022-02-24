@@ -1,5 +1,5 @@
 .home {
-  min-height: 80vh;
+  min-height: 60vh;
 
   .home-info {
     opacity: 0.82;
@@ -9,7 +9,7 @@
       margin-top: 10vh;
     }
     @include desktop {
-      margin-top: 22vh;
+      margin-top: 12vh;
     }
 
     h2,

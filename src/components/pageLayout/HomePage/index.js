@@ -36,7 +36,7 @@ const HomePage = ({ artworks }) => {
       </div>
 
       {/* <BackgroundVideo /> */}
-      {artworks && <Grid items={artworks} type="artwork" />}
+      {/* {artworks && <Grid items={artworks} type="artwork" />} */}
     </>
   );
 };
